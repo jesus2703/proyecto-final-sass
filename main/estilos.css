@@ -195,8 +195,7 @@ body {
 
 /* ESTILOS SERVICIOS */
 #servicios {
-  background-image: url(../img/pared-2-fondo.jpg);
-  background-repeat: no-repeat;
+  background: #f1faff;
   border: 2px solid white;
 }
 
@@ -233,6 +232,31 @@ body {
 .subtitulo-servicios {
   padding-bottom: 18px;
   font-size: 1.3em;
+}
+
+.div-btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+/************* APLICANDO EXTEND **********/
+.boton-servicios, .boton-servicios-dos {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #168dbd;
+  border-radius: 10px;
+}
+.boton-servicios a, .boton-servicios-dos a {
+  text-decoration: none;
+  color: white;
+}
+.boton-servicios:hover, .boton-servicios-dos:hover {
+  background-color: #0da9b4;
+  font-size: 1.1em;
+}
+
+.boton-servicios-dos {
+  background-color: rgb(7, 82, 100);
 }
 
 /* ESTILOS GALERIA */
