@@ -68,9 +68,6 @@
   font-size: 1.1em;
 }
 
-/***************** FIN DE SASS ************************
-
-*************************************************************/
 /* ESTILOS NOSOTROS */
 body {
   background: #f1faff;
@@ -198,22 +195,19 @@ body {
   background: #f1faff;
   border: 2px solid white;
 }
-
-.titulo-servicios {
+#servicios .titulo-servicios {
   text-align: center;
   font-size: 1.7em;
   padding: 20px;
   margin-bottom: 25px;
 }
-
-.contenedor-servicios {
+#servicios .contenedor-servicios {
   display: flex;
   justify-content: space-around;
   gap: 5px;
   padding-bottom: 20px;
 }
-
-.iframe-card {
+#servicios .contenedor-servicios .iframe-card {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -222,19 +216,16 @@ body {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
 }
-
-.iframe-card iframe {
+#servicios .contenedor-servicios .iframe-card iframe {
   border-radius: 10px;
   width: 100%;
   padding-bottom: 10px;
 }
-
-.subtitulo-servicios {
+#servicios .contenedor-servicios .iframe-card .subtitulo-servicios {
   padding-bottom: 18px;
   font-size: 1.3em;
 }
-
-.div-btn {
+#servicios .div-btn {
   display: flex;
   justify-content: space-around;
 }
@@ -311,21 +302,18 @@ body {
 #section-contacto {
   border: 2px solid white;
 }
-
-.titulo-contacto {
+#section-contacto .titulo-contacto {
   text-align: center;
   font-size: 1.7em;
   padding-top: 15px;
   padding-bottom: 30px;
 }
-
-.contenedor-contacto {
+#section-contacto .contenedor-contacto {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
 }
-
-.contacto-izquierda {
+#section-contacto .contenedor-contacto .contacto-izquierda {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -333,27 +321,23 @@ body {
   width: 50%;
   height: 72vh;
 }
-
-.contacto-info {
+#section-contacto .contenedor-contacto .contacto-izquierda .contacto-info {
   width: 80%;
   display: flex;
   padding: 20px;
   text-align: center;
   justify-content: center;
 }
-
-.texto-contacto {
+#section-contacto .contenedor-contacto .contacto-izquierda .contacto-info .texto-contacto {
   font-size: 20px;
   padding: 10px;
 }
-
-.formulario {
+#section-contacto .contenedor-contacto .formulario {
   width: 50%;
   display: flex;
   justify-content: center;
 }
-
-.form {
+#section-contacto .contenedor-contacto .formulario .form {
   width: 90%;
   max-width: 400px;
   border-radius: 1em;
@@ -361,15 +345,13 @@ body {
   background-color: #0da9b4;
   margin-bottom: 20px;
 }
-
-.form-container {
+#section-contacto .contenedor-contacto .formulario .form .form-container {
   width: 100%;
   display: grid;
   gap: 1em;
   grid-auto-columns: 100%;
 }
-
-.form-input {
+#section-contacto .contenedor-contacto .formulario .form .form-container .form-input {
   font-size: 1rem;
   padding: 0.8em 1em;
   outline: none;
@@ -377,30 +359,18 @@ body {
   border: 1px solid #bbb0b0;
   border-radius: 0.2em;
 }
-
-.form-input--message {
+#section-contacto .contenedor-contacto .formulario .form .form-container .form-input--message {
   resize: none;
   padding: 1.8em 1em;
   margin-bottom: 0.5em;
 }
-
-.form-cta {
+#section-contacto .contenedor-contacto .formulario .form .form-container .form-cta {
   border: none;
   font-weight: 700;
   padding: 0.7em;
   border: 1px solid #bbb0b0;
   color: black;
   cursor: pointer;
-}
-
-.pie-pagina {
-  text-align: center;
-  font-size: 12px;
-  padding-top: 10px;
-  border: 1px solid;
-  border-radius: 10px;
-  height: 40px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 /* MOBILE FIRTS */

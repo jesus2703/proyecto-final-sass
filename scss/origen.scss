@@ -77,10 +77,6 @@
   }
 }
 
-/***************** FIN DE SASS ************************
-
-*************************************************************/
-
 /* ESTILOS NOSOTROS */
 
 body {
@@ -209,46 +205,43 @@ body {
 #servicios {
   background: #f1faff;
   border: 2px solid white;
-}
 
-.titulo-servicios {
-  text-align: center;
-  font-size: 1.7em;
-  padding: 20px;
-  margin-bottom: 25px;
-}
+  .titulo-servicios {
+    text-align: center;
+    font-size: 1.7em;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+  .contenedor-servicios {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    padding-bottom: 20px;
 
-.contenedor-servicios {
-  display: flex;
-  justify-content: space-around;
-  gap: 5px;
-  padding-bottom: 20px;
-}
+    .iframe-card {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      border: 1px solid;
+      border-radius: 10px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+      margin-bottom: 30px;
 
-.iframe-card {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  border: 1px solid;
-  border-radius: 10px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-  margin-bottom: 30px;
-}
-
-.iframe-card iframe {
-  border-radius: 10px;
-  width: 100%;
-  padding-bottom: 10px;
-}
-
-.subtitulo-servicios {
-  padding-bottom: 18px;
-  font-size: 1.3em;
-}
-
-.div-btn {
-  display: flex;
-  justify-content: space-around;
+      iframe {
+        border-radius: 10px;
+        width: 100%;
+        padding-bottom: 10px;
+      }
+      .subtitulo-servicios {
+        padding-bottom: 18px;
+        font-size: 1.3em;
+      }
+    }
+  }
+  .div-btn {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 /************* APLICANDO EXTEND **********/
@@ -334,98 +327,85 @@ body {
 
 #section-contacto {
   border: 2px solid white;
+
+  .titulo-contacto {
+    text-align: center;
+    font-size: 1.7em;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+  .contenedor-contacto {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+    .contacto-izquierda {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      height: 72vh;
+
+      .contacto-info {
+        width: 80%;
+        display: flex;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+
+        .texto-contacto {
+          font-size: 20px;
+          padding: 10px;
+        }
+      }
+    }
+    .formulario {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+
+      .form {
+        width: 90%;
+        max-width: 400px;
+        border-radius: 1em;
+        padding: 3.5em 1.5em;
+        background-color: #0da9b4;
+        margin-bottom: 20px;
+
+        .form-container {
+          width: 100%;
+          display: grid;
+          gap: 1em;
+          grid-auto-columns: 100%;
+
+          .form-input {
+            font-size: 1rem;
+            padding: 0.8em 1em;
+            outline: none;
+            border: none;
+            border: 1px solid #bbb0b0;
+            border-radius: 0.2em;
+          }
+          .form-input--message {
+            resize: none;
+            padding: 1.8em 1em;
+            margin-bottom: 0.5em;
+          }
+          .form-cta {
+            border: none;
+            font-weight: 700;
+            padding: 0.7em;
+            border: 1px solid #bbb0b0;
+            color: black;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
 }
 
-.titulo-contacto {
-  text-align: center;
-  font-size: 1.7em;
-  padding-top: 15px;
-  padding-bottom: 30px;
-}
-
-.contenedor-contacto {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
-.contacto-izquierda {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  height: 72vh;
-}
-
-.contacto-info {
-  width: 80%;
-  display: flex;
-  padding: 20px;
-  text-align: center;
-  justify-content: center;
-}
-
-.texto-contacto {
-  font-size: 20px;
-  padding: 10px;
-}
-
-.formulario {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-
-.form {
-  width: 90%;
-  max-width: 400px;
-  border-radius: 1em;
-  padding: 3.5em 1.5em;
-  background-color: #0da9b4;
-  margin-bottom: 20px;
-}
-
-.form-container {
-  width: 100%;
-  display: grid;
-  gap: 1em;
-  grid-auto-columns: 100%;
-}
-
-.form-input {
-  font-size: 1rem;
-  padding: 0.8em 1em;
-  outline: none;
-  border: none;
-  border: 1px solid #bbb0b0;
-  border-radius: 0.2em;
-}
-
-.form-input--message {
-  resize: none;
-  padding: 1.8em 1em;
-  margin-bottom: 0.5em;
-}
-
-.form-cta {
-  border: none;
-  font-weight: 700;
-  padding: 0.7em;
-  border: 1px solid #bbb0b0;
-  color: black;
-  cursor: pointer;
-}
-
-.pie-pagina {
-  text-align: center;
-  font-size: 12px;
-  padding-top: 10px;
-  border: 1px solid;
-  border-radius: 10px;
-  height: 40px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-}
 
 /* MOBILE FIRTS */
 
