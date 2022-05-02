@@ -18,7 +18,6 @@
 /********************APLICANDO SASS**********************
 *********************AL PROYECTO***********************/
 
-
 #portada {
   background: url(../img/imagen-4.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -33,58 +32,56 @@
     height: 100vh;
     color: white;
 
-        .titulo-principal {
-        font-size: 3.5em;
-        font-weight: 700;
-        padding-top: 40px;
-        }
-
-        .subtitulo-principal {
-        font-size: 2em;
-        }
-
-        .subtitulo-secundario {
-        font-size: 1.5em;
-        margin-bottom: 25px;
-        }
-
-        .iconos {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: white;
-        border: 2px solid;
-        width: 95%;
-        margin: auto;
-        margin-bottom: 30px;
-        }
-
-        .boton-portada{
-            padding: 10px;
-            background-color:#4bc1f0;
-            width: 35%;
-            margin: auto;
-            border-radius: 10px;
-            
-            a{
-                text-decoration: none;
-                color: white;
-            }&:hover{
-                background-color: #0da9b4;
-                font-size: 1.1em;
-            }
-        }
+    .titulo-principal {
+      font-size: 3.5em;
+      font-weight: 700;
+      padding-top: 40px;
     }
+
+    .subtitulo-principal {
+      font-size: 2em;
+    }
+
+    .subtitulo-secundario {
+      font-size: 1.5em;
+      margin-bottom: 25px;
+    }
+
+    .iconos {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: white;
+      border: 2px solid;
+      width: 95%;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .boton-portada {
+      padding: 10px;
+      background-color: #4bc1f0;
+      width: 35%;
+      margin: auto;
+      border-radius: 10px;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      &:hover {
+        background-color: #0da9b4;
+        font-size: 1.1em;
+      }
+    }
+  }
 }
 
 /***************** FIN DE SASS ************************
 
 *************************************************************/
 
-
-
 /* ESTILOS NOSOTROS */
-
 
 body {
   background: #f1faff;
@@ -249,48 +246,46 @@ body {
   font-size: 1.3em;
 }
 
-.div-btn{
+.div-btn {
   display: flex;
   justify-content: space-around;
 }
 
 /************* APLICANDO EXTEND **********/
 
-.boton-servicios{
+.boton-servicios {
   padding: 10px;
   margin-bottom: 10px;
-  background-color:#168dbd;
+  background-color: #168dbd;
   border-radius: 10px;
-  
-  a{
-      text-decoration: none;
-      color: white;
-  }&:hover{
-      background-color: #0da9b4;
-      font-size: 1.1em;
+
+  a {
+    text-decoration: none;
+    color: white;
   }
-  
+  &:hover {
+    background-color: #0da9b4;
+    font-size: 1.1em;
+  }
 }
 
-.boton-servicios-dos{
+.boton-servicios-dos {
   @extend .boton-servicios;
-  background-color:rgb(7, 82, 100);
-
+  background-color: rgb(7, 82, 100);
 }
+
+/********* FIN DEL EXTEND *********/
 
 /* ESTILOS GALERIA */
 
-@mixin maximos($max-altura, $max-anchura){
+/********* APLICANDO MIXIN *********/
 
+@mixin maximos($max-altura, $max-anchura) {
   max-height: $max-altura;
   max-width: $max-anchura;
-
 }
-  
 
 #nuestro-trabajo {
-  background-image: url(../img/pared-2-fondo.jpg);
-  background-repeat: no-repeat;
   border: 2px solid white;
 }
 
@@ -306,6 +301,8 @@ body {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
+
+/********* FIN DEL MIXIN *********/
 
 .contenedor-valores {
   display: grid;
@@ -336,8 +333,6 @@ body {
 /* ESTILOS CONTACTO */
 
 #section-contacto {
-  background-image: url(../img/pared-2-fondo.jpg);
-  background-repeat: no-repeat;
   border: 2px solid white;
 }
 
@@ -360,6 +355,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 50%;
+  height: 72vh;
 }
 
 .contacto-info {
@@ -386,6 +382,8 @@ body {
   max-width: 400px;
   border-radius: 1em;
   padding: 3.5em 1.5em;
+  background-color: #0da9b4;
+  margin-bottom: 20px;
 }
 
 .form-container {
@@ -434,7 +432,6 @@ body {
 /* SMARTPHONE */
 
 @media (max-width: 480px) {
-    
   /* ESTILOS INICO */
 
   #logo {
@@ -446,18 +443,14 @@ body {
   }
 
   #portada {
-
     background: none;
     background: url(../img/bg1.jpg) no-repeat center center fixed;
     background-size: cover;
-    
-        .container-portada{
 
-            width: 100vw;
-            
-        }
+    .container-portada {
+      width: 100vw;
+    }
   }
-
 
   .titulo-principal {
     font-size: 2.5em;

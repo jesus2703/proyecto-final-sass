@@ -259,10 +259,10 @@ body {
   background-color: rgb(7, 82, 100);
 }
 
+/********* FIN DEL EXTEND *********/
 /* ESTILOS GALERIA */
+/********* APLICANDO MIXIN *********/
 #nuestro-trabajo {
-  background-image: url(../img/pared-2-fondo.jpg);
-  background-repeat: no-repeat;
   border: 2px solid white;
 }
 
@@ -280,6 +280,7 @@ body {
   border-radius: 10px;
 }
 
+/********* FIN DEL MIXIN *********/
 .contenedor-valores {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -308,8 +309,6 @@ body {
 
 /* ESTILOS CONTACTO */
 #section-contacto {
-  background-image: url(../img/pared-2-fondo.jpg);
-  background-repeat: no-repeat;
   border: 2px solid white;
 }
 
@@ -332,6 +331,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 50%;
+  height: 72vh;
 }
 
 .contacto-info {
@@ -358,6 +358,8 @@ body {
   max-width: 400px;
   border-radius: 1em;
   padding: 3.5em 1.5em;
+  background-color: #0da9b4;
+  margin-bottom: 20px;
 }
 
 .form-container {
